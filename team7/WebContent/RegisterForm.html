@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=euc-kr">
+<title>회원 가입</title>
+</head>
+<body>
+	<form action=register method=post>
+		<table>
+			<tr>
+				<td><h1>회원가입</h1></td>
+			</tr>
+			<tr>
+				<td>아이디</td>
+				<td><input type=text name=ID required></td>
+			</tr>
+			<tr>
+				<td>패스워드</td>
+				<td><input type=password name=PASSWORD required></td>
+			</tr>
+			<tr>
+				<td>이름</td>
+				<td><input type=text name=NAME required></td>
+			</tr>
+			<tr>
+				<td>학번</td>
+				<td><input type=text name=STDNUM required></td>
+			</tr>
+			<tr>
+				<td>성별</td>
+				<td><input type=radio name=GENDER value='MALE' required>남 <input
+					type=radio name=GENDER value='FEMALE' required>여</td>
+			</tr>
+			<tr>
+				<td>나이</td>
+				<td><input type=text name=AGE required></td>
+			</tr>
+			<tr>
+				<td>사진</td>
+				<td><input type=file name=PHOTO></td>
+			</tr>
+			<tr>
+				<td>폰 번호</td>
+				<td><input type=tel name=PHONE required></td>
+			</tr>
+			<tr>
+				<td>이메일 주소</td>
+				<td><input type=email name=EMAIL></td>
+			</tr>
+			<tr>
+				<td>상태</td>
+				<td><input type=text name=STATE size=50></td>
+			</tr>
+			<tr>
+				<td><br> <input type=submit value='확인'></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

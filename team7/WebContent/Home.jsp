@@ -13,7 +13,14 @@
 			<a href="Home.jsp">Pick Me Up</a>
 		</div>
 		<div id="login">
-			<jsp:include page="LoginForm.html" />
+			<c:choose>
+				<c:when test="${sessionScope.LOGIN_ID==null}">
+					<jsp:include page="LoginWindow.html" />
+				</c:when>
+				<c:otherwise>
+					<jsp:include page="LogoutWindow.jsp" />
+				</c:otherwise>
+			</c:choose>
 		</div>
 		<div id="nav">
 			<ul>
