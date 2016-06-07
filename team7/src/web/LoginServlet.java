@@ -14,6 +14,7 @@ public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		request.setCharacterEncoding("euc-kr");
 		String id = request.getParameter("ID");
 		String password = request.getParameter("PASSWORD");
 		String currentURL=request.getParameter("CURRENT_URL");

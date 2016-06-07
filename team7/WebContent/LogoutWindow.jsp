@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=euc-kr"
+	pageEncoding="euc-kr"%>
 <form action=logout method=post
 	onSubmit="CURRENT_URL.value=window.location.href">
 	æ»≥Á«œººø‰, ${sessionScope.LOGIN_ID}¥‘ 

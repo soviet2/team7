@@ -14,6 +14,7 @@ public class RegisterServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		request.setCharacterEncoding("euc-kr");
 		String id = request.getParameter("ID");
 		String password = request.getParameter("PASSWORD");
 		String name = request.getParameter("NAME");
@@ -35,7 +36,7 @@ public class RegisterServlet extends HttpServlet {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/webdb?useUnicode=true&characterEncoding=UTF-8", "root", "student");
+					"jdbc:mysql://localhost:3306/webdb", "root", "student");
 			if (conn == null)
 				throw new Exception("데이터베이스에 연결할 수 없습니다.");
 			stmt = conn.createStatement();

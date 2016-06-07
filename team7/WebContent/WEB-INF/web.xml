@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
 	<servlet>
 		<servlet-name>register-servlet</servlet-name>
 		<servlet-class>web.RegisterServlet</servlet-class>
@@ -26,4 +27,21 @@
 		<servlet-name>logout-servlet</servlet-name>
 		<url-pattern>/logout</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>read-servlet</servlet-name>
+		<servlet-class>web.InfoReadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>read-servlet</servlet-name>
+		<url-pattern>/reader</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>update-servlet</servlet-name>
+		<servlet-class>web.InfoUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>update-servlet</servlet-name>
+		<url-pattern>/updater</url-pattern>
+	</servlet-mapping>
+
 </web-app>
