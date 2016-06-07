@@ -1,9 +1,9 @@
-<%@page contentType="text/html; charset=euc-kr"%>
+<%@page contentType="text/html; charset=utf-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Pick Me Up</title>
 <link rel="styLesheet" type="text/css" href="css/homeLayout.css"></link>
 </head>
@@ -24,12 +24,12 @@
 		</div>
 		<div id="nav">
 			<ul>
-				<li><a href="Home.jsp?BODY_PATH=Board.jsp">°Ô½ÃÆÇ</a></li>
-				<li><a href="Home.jsp?BODY_PATH=Search.jsp">°Ë»ö</a></li>
-				<li><a href="Home.jsp?BODY_PATH=GreenLight.jsp">¸¶ÀÌÆäÀÌÁö</a>
+				<li><a href="Home.jsp?BODY_PATH=Board.jsp">ê²Œì‹œíŒ</a></li>
+				<li><a href="Home.jsp?BODY_PATH=Search.jsp">ê²€ìƒ‰</a></li>
+				<li><a href="Home.jsp?BODY_PATH=GreenLight.jsp">ë§ˆì´íŽ˜ì´ì§€</a>
 					<ul>
-						<li><a href="Home.jsp?BODY_PATH=GreenLight.jsp">±×¸°¹Ù±¸´Ï</a></li>
-						<li><a href="Home.jsp?BODY_PATH=Message.jsp">ÂÊÁöÇÔ</a></li>
+						<li><a href="Home.jsp?BODY_PATH=GreenLight.jsp">ê·¸ë¦°ë°”êµ¬ë‹ˆ</a></li>
+						<li><a href="Home.jsp?BODY_PATH=Message.jsp">ìª½ì§€í•¨</a></li>
 					</ul></li>
 			</ul>
 		</div>

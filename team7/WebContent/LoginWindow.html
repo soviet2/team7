@@ -1,9 +1,17 @@
-
-<form action=login method=post
-	onSubmit="CURRENT_URL.value=window.location.href">
-	���̵�: <input type=text name=ID size=15>
-	��й�ȣ: <input type=password name=PASSWORD size=15>
-	<input type=hidden name=CURRENT_URL>
-	<input type=submit value='�α���'>
-	<input type="button" value="ȸ������" onclick="location.href='RegisterForm.html'">
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>회원 가입</title>
+</head>
+<body>
+	<form action=login method=post
+		onSubmit="CURRENT_URL.value=window.location.href">
+		아이디: <input type=text name=ID size=15>
+		비밀번호: <input type=password name=PASSWORD size=15>
+		<input type=hidden name=CURRENT_URL>
+		<input type=submit value='로그인'>
+		<input type="button" value="회원가입" onclick="location.href='RegisterForm.html'">
+	</form>
+</body>
+</html>

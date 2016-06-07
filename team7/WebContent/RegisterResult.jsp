@@ -1,15 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=euc-kr"
-	pageEncoding="euc-kr"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
-<title>х╦©Ь ╟║ют ©о╥А</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>М ▄Л⌡░ Й╟─Л·┘ Л≥└Кё▄</title>
 </head>
 <body>
-	х╦©Ь╟║ютюл ©о╥А╣г╬З╫ю╢о╢ы.
+	М ▄Л⌡░Й╟─Л·┘Л²╢ Л≥└Кё▄К░≤Л≈┬Л┼╣К▀┬К▀╓.
 	<br>
 	<br>
-	<input type="button" value="х╗ю╦╥н" onclick="location.href='Home.jsp'">
+	<input type="button" value="М≥┬Л°╪К║°" onclick="location.href='Home.jsp'">
 </body>
 </html>
