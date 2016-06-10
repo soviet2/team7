@@ -14,7 +14,8 @@ public class RegisterServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		request.setCharacterEncoding("euc-kr");
+		request.setCharacterEncoding("utf-8");
+		
 		String id = request.getParameter("ID");
 		String password = request.getParameter("PASSWORD");
 		String name = request.getParameter("NAME");
@@ -27,6 +28,7 @@ public class RegisterServlet extends HttpServlet {
 		int age = 0;
 		if (age_str != null && !age_str.isEmpty())
 			age = Integer.parseInt(age_str.trim());
+		String photo = request.getParameter("PHOTO");
 		String phone = request.getParameter("PHONE");
 		String email = request.getParameter("EMAIL");
 		String state = request.getParameter("STATE");
@@ -35,15 +37,14 @@ public class RegisterServlet extends HttpServlet {
 		Statement stmt = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/webdb", "root", "student");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/webdb", "root", "student");
 			if (conn == null)
 				throw new Exception("데이터베이스에 연결할 수 없습니다.");
 			stmt = conn.createStatement();
 			String command = String.format(
-					"insert into memberinfo " + "(id, password, name, stdNum, gender, age, phone, email, state) "
-							+ "values ('%s', '%s', '%s', %s, '%s', %s, '%s', '%s', '%s');",
-					id, password, name, stdNum, gender, age, phone, email, state);
+					"insert into memberinfo " + "(id, password, name, stdNum, gender, age, photo, phone, email, state) "
+							+ "values ('%s', '%s', '%s', %s, '%s', %s, '%s', '%s', '%s', '%s');",
+					id, password, name, stdNum, gender, age, photo, phone, email, state);
 			int rowNum = stmt.executeUpdate(command);
 			if (rowNum < 1)
 				throw new Exception("데이터를 DB에 입력할 수 없습니다.");

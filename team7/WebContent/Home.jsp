@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Pick Me Up</title>
-<link rel="styLesheet" type="text/css" href="css/homeLayout.css"></link>
+<!-- <link rel="styLesheet" type="text/css" href="css/homeLayout.css"></link> -->
 </head>
 <body>
 	<div id="wrap">

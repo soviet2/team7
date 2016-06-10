@@ -28,20 +28,11 @@
 		<url-pattern>/logout</url-pattern>
 	</servlet-mapping>
 	<servlet>
-		<servlet-name>read-servlet</servlet-name>
-		<servlet-class>web.InfoReadServlet</servlet-class>
+		<servlet-name>photoview-servlet</servlet-name>
+		<servlet-class>web.PhotoViewServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>read-servlet</servlet-name>
-		<url-pattern>/reader</url-pattern>
+		<servlet-name>photoview-servlet</servlet-name>
+		<url-pattern>/photo</url-pattern>
 	</servlet-mapping>
-	<servlet>
-		<servlet-name>update-servlet</servlet-name>
-		<servlet-class>web.InfoUpdateServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>update-servlet</servlet-name>
-		<url-pattern>/updater</url-pattern>
-	</servlet-mapping>
-
 </web-app>
