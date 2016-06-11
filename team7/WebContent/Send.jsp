@@ -1,3 +1,3 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
-그린바구니 
+보낸그린라이트
