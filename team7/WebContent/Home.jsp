@@ -27,12 +27,13 @@
 				<ul>
 					<li><a href="Home.jsp?BODY_PATH=bbs-list">게시판</a></li>
 					<li><a href="Home.jsp?BODY_PATH=Search.jsp">검색</a></li>
-					<li><a href="Home.jsp?BODY_PATH=Matching.jsp">그린바구니</a>
-						<ul>
-							<li><a href="Home.jsp?BODY_PATH=Matching.jsp">매칭현황</a></li>
-							<li><a href="Home.jsp?BODY_PATH=Send.jsp">보낸라이트</a></li>
-							<li><a href="Home.jsp?BODY_PATH=Receive.jsp">받은라이트</a></li>
-						</ul></li>
+					<li><a href="Home.jsp?BODY_PATH=Green/GreenLight.jsp">그린바구니</a>
+						<!-- <ul>
+							<li><a href="Home.jsp?BODY_PATH=maching">매칭현황</a></li>
+							<li><a href="Home.jsp?BODY_PATH=setgreenshow">보낸라이트</a></li>
+							<li><a href="Home.jsp?BODY_PATH=getgreenshow">받은라이트</a></li>
+						</ul> -->
+					</li>
 					<li><a href="Home.jsp?BODY_PATH=Message.jsp">쪽지함</a></li>
 				</ul>
 			</div>
@@ -41,6 +42,11 @@
 			<c:choose>
 				<c:when test="${param.BODY_PATH == null}">
 					<c:import url="bbs-list" />
+				</c:when>
+				<c:when test="${param.BODY_PATH == greenlight}">
+					<c:import url="maching" />
+					<c:import url="setgreenshow" />
+					<c:import url="getgreenshow" />
 				</c:when>
 				<c:otherwise>
 					<c:import url="${param.BODY_PATH}" />
@@ -53,7 +59,10 @@
 		src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="jquery.fittext.js"></script>
 	<script type="text/javascript">
-		$("#wrap").fitText(8, { minFontSize: '12px', maxFontSize: '16px' });
+		$("#wrap").fitText(8, {
+			minFontSize : '12px',
+			maxFontSize : '16px'
+		});
 	</script>
 </body>
 </html>

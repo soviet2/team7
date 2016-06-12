@@ -61,7 +61,7 @@
 			Onclick="javascript:Check3('<%= session.getAttribute("LOGIN_ID") %>', '${bbsItem.userName}');">
 	</form>
 	<br>
-	<form name=formGreen action=bbs-green method=post>
+	<form name=formGreen action=sendgreen method=post>
 		<input type=button value='그린라이트'
 			Onclick="javascript:Check4('<%= session.getAttribute("LOGIN_ID") %>', '${bbsItem.userName}')">
 		<input type=hidden value="${bbsItem.userName}" name=setCode>
