@@ -35,4 +35,54 @@
 		<servlet-name>photoview-servlet</servlet-name>
 		<url-pattern>/photo</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+    <servlet-name>bbs-list-servlet</servlet-name>
+    <servlet-class>web.BBSListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>bbs-list-servlet</servlet-name>
+    <url-pattern>/bbs-list</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>read-servlet</servlet-name>
+    <servlet-class>web.InfoReadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>read-servlet</servlet-name>
+    <url-pattern>/reader</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>update-servlet</servlet-name>
+    <servlet-class>web.InfoUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>update-servlet</servlet-name>
+    <url-pattern>/updater</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>upload-servlet</servlet-name>
+    <servlet-class>web.Upload</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>upload-servlet</servlet-name>
+    <url-pattern>/bbs-post</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>delete-servlet</servlet-name>
+    <servlet-class>web.BBSDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delete-servlet</servlet-name>
+    <url-pattern>/bbs-delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>sendG-servlet</servlet-name>
+    <servlet-class>web.SendGreenServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sendG-servlet</servlet-name>
+    <url-pattern>/bbs-green</url-pattern>
+  </servlet-mapping>
 </web-app>

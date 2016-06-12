@@ -25,7 +25,7 @@
 			</div>
 			<div id="nav">
 				<ul>
-					<li><a href="Home.jsp?BODY_PATH=Board.jsp">게시판</a></li>
+					<li><a href="Home.jsp?BODY_PATH=bbs-list">게시판</a></li>
 					<li><a href="Home.jsp?BODY_PATH=Search.jsp">검색</a></li>
 					<li><a href="Home.jsp?BODY_PATH=Matching.jsp">그린바구니</a>
 						<ul>
@@ -40,7 +40,7 @@
 		<div id="contents">
 			<c:choose>
 				<c:when test="${param.BODY_PATH == null}">
-					<c:import url="Board.jsp" />
+					<c:import url="bbs-list" />
 				</c:when>
 				<c:otherwise>
 					<c:import url="${param.BODY_PATH}" />
